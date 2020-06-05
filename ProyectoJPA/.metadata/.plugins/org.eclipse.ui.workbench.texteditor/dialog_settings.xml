@@ -6,8 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="create"/>
+		<item key="selection" value="crear"/>
 		<list key="findhistory">
+			<item value="crear"/>
+			<item value="factura"/>
+			<item value="clienteid"/>
 			<item value="create"/>
 		</list>
 		<list key="replacehistory">
