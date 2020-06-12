@@ -22,7 +22,6 @@ import javax.validation.constraints.NotNull;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
-//@SuppressWarnings("deprecation")
 @Entity
 @Table(name = "clientes")
 public class Cliente implements Serializable {
@@ -50,11 +49,11 @@ public class Cliente implements Serializable {
 	@OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	private List<Factura> facturas;
 
+	private String foto;
+
 	public Cliente() {
 		facturas = new ArrayList<Factura>();
 	}
-
-	private String foto;
 
 	public Long getId() {
 		return id;
@@ -96,10 +95,6 @@ public class Cliente implements Serializable {
 		this.createAt = createAt;
 	}
 
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	}
-
 	public String getFoto() {
 		return foto;
 	}
@@ -120,6 +115,14 @@ public class Cliente implements Serializable {
 		facturas.add(factura);
 	}
 
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+	
+	@Override
+	public String toString() {
+		return nombre + " " + apellido;
+	}
+	
 	private static final long serialVersionUID = 1L;
-
 }

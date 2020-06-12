@@ -8,9 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.bolsadeideas.springboot.app.models.service.IUploadFileService;
 
 @SpringBootApplication
-public class SpringBootDataJpaApplication implements CommandLineRunner{
+public class SpringBootDataJpaApplication  implements CommandLineRunner {
 
-	
 	@Autowired
 	IUploadFileService uploadFileService;
 	

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.springframework.ide.eclipse.boot.launch">
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-        <listEntry value="/spring-boot-data-jpa/src/main/java/com/boldadeideas/springboot/app/SpringBootDataJpaApplication.java"/>
+        <listEntry value="/spring-boot-data-jpa/src/main/java/com/bolsadeideas/springboot/app/SpringBootDataJpaApplication.java"/>
     </listAttribute>
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
         <listEntry value="1"/>
     </listAttribute>
     <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.springframework.ide.eclipse.boot.launch.BootMavenClassPathProvider"/>
-    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.boldadeideas.springboot.app.SpringBootDataJpaApplication"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.bolsadeideas.springboot.app.SpringBootDataJpaApplication"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="spring-boot-data-jpa"/>
     <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.springframework.ide.eclipse.boot.launch.BootMavenSourcePathProvider"/>
     <stringAttribute key="process_factory_id" value="org.springframework.ide.eclipse.boot.launch.process.BootProcessFactory"/>

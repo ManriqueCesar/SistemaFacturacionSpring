@@ -21,28 +21,26 @@ public class UploadFileServiceImpl implements IUploadFileService {
 
 	private final Logger log = LoggerFactory.getLogger(getClass());
 
-	private final static String UPLOADS_FOLDER = "Upload";
+	private final static String UPLOADS_FOLDER = "uploads";
 
 	@Override
 	public Resource load(String filename) throws MalformedURLException {
 		Path pathFoto = getPath(filename);
-		log.info("PathFoto: " + pathFoto);
-		Resource recurso = null;
+		log.info("pathFoto: " + pathFoto);
 
-		recurso = new UrlResource(pathFoto.toUri());
-		if (!recurso.exists() && !recurso.isReadable()) {
-			throw new RuntimeException("Error: no se puede cargar la iamgen: " + pathFoto.toString());
+		Resource recurso = new UrlResource(pathFoto.toUri());
+
+		if (!recurso.exists() || !recurso.isReadable()) {
+			throw new RuntimeException("Error: no se puede cargar la imagen: " + pathFoto.toString());
 		}
-
 		return recurso;
 	}
 
 	@Override
 	public String copy(MultipartFile file) throws IOException {
-
 		String uniqueFilename = UUID.randomUUID().toString() + "_" + file.getOriginalFilename();
 		Path rootPath = getPath(uniqueFilename);
-		
+
 		log.info("rootPath: " + rootPath);
 
 		Files.copy(file.getInputStream(), rootPath);
@@ -52,12 +50,11 @@ public class UploadFileServiceImpl implements IUploadFileService {
 
 	@Override
 	public boolean delete(String filename) {
-		
 		Path rootPath = getPath(filename);
 		File archivo = rootPath.toFile();
-		
-		if(archivo.exists() && archivo.canRead()) {
-			if(archivo.delete()) {
+
+		if (archivo.exists() && archivo.canRead()) {
+			if (archivo.delete()) {
 				return true;
 			}
 		}
@@ -71,13 +68,12 @@ public class UploadFileServiceImpl implements IUploadFileService {
 	@Override
 	public void deleteAll() {
 		FileSystemUtils.deleteRecursively(Paths.get(UPLOADS_FOLDER).toFile());
-		
+
 	}
 
 	@Override
 	public void init() throws IOException {
+		// TODO Auto-generated method stub
 		Files.createDirectory(Paths.get(UPLOADS_FOLDER));
-		
 	}
-
 }
