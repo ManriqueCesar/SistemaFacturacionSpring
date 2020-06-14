@@ -155,3 +155,54 @@
 2020-06-09 23:02:16,169 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
 2020-06-09 23:02:16,177 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-06-09 23:02:16,177 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Intel\Desktop\SpringTools4\ProyectoJPA\spring-boot-data-jpa\src\test\resources
+2020-06-13 22:47:21,826 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-06-13 22:47:56,143 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-13 22:47:56,167 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-06-13 22:47:56,250 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2020-06-13 22:47:56,342 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-13 22:47:56,342 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Intel\Desktop\SpringTools4\SistemaFacturacionSpring\ProyectoJPA\spring-boot-data-jpa\src\test\resources
+2020-06-13 23:26:21,413 [Worker-16: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bolsadeideas.springboot.datajpa.app:spring-boot-data-jpa:0.0.1-SNAPSHOT @ C:\Users\Intel\Desktop\SpringTools4\SistemaFacturacionSpring\ProyectoJPA\spring-boot-data-jpa\pom.xml.
+2020-06-13 23:26:45,309 [Worker-22: reload maven project] ERROR o.e.m2e.editor.pom.MavenPomEditor - failed to load maven project for org.eclipse.ui.part.FileEditorInput(/spring-boot-data-jpa/pom.xml)
+org.eclipse.core.runtime.CoreException: Could not read maven project
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:851) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$2.call(ProjectRegistryManager.java:1069) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$2.call(ProjectRegistryManager.java:1) ~[na:na]
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4878) ~[na:na]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3529) ~[na:na]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2278) ~[na:na]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2155) ~[na:na]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2045) ~[na:na]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3953) ~[na:na]
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4873) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.getMavenProject(ProjectRegistryManager.java:1067) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:242) ~[na:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:261) ~[org.eclipse.m2e.core.ui_1.12.0.20190628-1134.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:740) ~[na:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$5.run(MavenPomEditor.java:1074) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.10.400.v20190506-1457.jar:na]
+2020-06-13 23:26:46,174 [Worker-16: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bolsadeideas.springboot.datajpa.app:spring-boot-data-jpa:0.0.1-SNAPSHOT @ C:\Users\Intel\Desktop\SpringTools4\SistemaFacturacionSpring\ProyectoJPA\spring-boot-data-jpa\pom.xml.
+2020-06-13 23:54:30,263 [Worker-7: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bolsadeideas.springboot.datajpa.app:spring-boot-data-jpa:0.0.1-SNAPSHOT @ C:\Users\Intel\Desktop\SpringTools4\SistemaFacturacionSpring\ProyectoJPA\spring-boot-data-jpa\pom.xml.
+2020-06-13 23:54:30,451 [Worker-23: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/thymeleaf/extras/thymeleaf-extras-springsecurity5/3.0.4.RELEASE/thymeleaf-extras-springsecurity5-3.0.4.RELEASE.pom
+2020-06-13 23:54:30,657 [Worker-23: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/thymeleaf/extras/thymeleaf-extras-springsecurity5/3.0.4.RELEASE/thymeleaf-extras-springsecurity5-3.0.4.RELEASE.pom
+2020-06-13 23:54:31,372 [Worker-23: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/thymeleaf/extras/thymeleaf-extras-springsecurity5/3.0.4.RELEASE/thymeleaf-extras-springsecurity5-3.0.4.RELEASE.jar
+2020-06-13 23:54:31,671 [Worker-23: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/thymeleaf/extras/thymeleaf-extras-springsecurity5/3.0.4.RELEASE/thymeleaf-extras-springsecurity5-3.0.4.RELEASE.jar
+2020-06-13 23:54:31,779 [Worker-7: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/thymeleaf/extras/thymeleaf-extras-springsecurity5/3.0.4.RELEASE/thymeleaf-extras-springsecurity5-3.0.4.RELEASE.jar
+2020-06-13 23:54:32,174 [Worker-7: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/thymeleaf/extras/thymeleaf-extras-springsecurity5/3.0.4.RELEASE/thymeleaf-extras-springsecurity5-3.0.4.RELEASE.jar
+2020-06-13 23:54:34,190 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-13 23:54:34,193 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-06-13 23:54:34,194 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-06-13 23:54:34,197 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-13 23:54:34,197 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Intel\Desktop\SpringTools4\SistemaFacturacionSpring\ProyectoJPA\spring-boot-data-jpa\src\test\resources
+2020-06-13 23:54:36,018 [Worker-24: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/thymeleaf/extras/thymeleaf-extras-springsecurity5/3.0.4.RELEASE/thymeleaf-extras-springsecurity5-3.0.4.RELEASE-sources.jar
+2020-06-13 23:54:37,280 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-13 23:54:37,302 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-06-13 23:54:37,319 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 18 resources
+2020-06-13 23:54:45,305 [Worker-24: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/thymeleaf/extras/thymeleaf-extras-springsecurity5/3.0.4.RELEASE/thymeleaf-extras-springsecurity5-3.0.4.RELEASE-sources.jar
+2020-06-13 23:54:46,397 [Worker-24: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.thymeleaf.extras:thymeleaf-extras-springsecurity5:3.0.4.RELEASE
+2020-06-13 23:54:46,571 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-13 23:54:46,571 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Intel\Desktop\SpringTools4\SistemaFacturacionSpring\ProyectoJPA\spring-boot-data-jpa\src\test\resources
+2020-06-13 23:54:47,891 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-13 23:54:47,892 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-06-13 23:54:47,892 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-06-13 23:54:47,897 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-06-13 23:54:47,898 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Intel\Desktop\SpringTools4\SistemaFacturacionSpring\ProyectoJPA\spring-boot-data-jpa\src\test\resources
